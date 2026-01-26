@@ -32,7 +32,7 @@ export default function KontakKami() {
                   <span className="w-full sm:w-32 lg:w-40 mb-1 sm:mb-0 font-medium sm:font-normal">
                     Nomor Telepon
                   </span>
-                  <span className="flex-1">+62 858-2976-4860</span>
+                  <span className="flex-1">+62 815 - 3135 - 669</span>
                 </div>
 
                 <div className="flex flex-col sm:flex-row sm:items-start">
@@ -93,7 +93,7 @@ export default function KontakKami() {
           {/* Tombol WhatsApp */}
           <div className="mt-20 lg:mt-6 flex flex-col gap-3 items-center lg:items-start w-full px-4 sm:px-8 lg:px-32">
             <a
-              href="https://wa.me/6285829764860"
+              href="https://wa.me/628153135669"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-between w-full max-w-xs px-4 py-3 bg-white rounded-xl text-green-800 font-semibold shadow-xl hover:shadow-2xl hover:-translate-y-1 transition duration-300"

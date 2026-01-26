@@ -57,7 +57,7 @@ export default function Footer() {
               </Link>
 
               {/* WhatsApp */}
-              <Link href="https://wa.me/6285829764860" aria-label="WhatsApp">
+              <Link href="https://wa.me/628153135669" aria-label="WhatsApp">
                 <Image
                   src="/images/icon_wa.png"
                   alt="WhatsApp"
@@ -109,7 +109,7 @@ export default function Footer() {
               Jawa Barat 40171, Indonesia
             </p>
             <p className="text-gray-600">ptdahliglobalindo@gmail.com</p>
-            <p className="text-gray-600">(+62) 858-2976-4860</p>
+            <p className="text-gray-600">(+62) 815 - 3135 - 669</p>
           </div>
         </div>
       </div>

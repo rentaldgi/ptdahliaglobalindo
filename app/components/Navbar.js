@@ -67,7 +67,7 @@ export default function Navbar() {
 
           {/* Tombol WA */}
           <a
-            href="https://wa.me/6285829764860"
+            href="https://wa.me/628153135669"
             target="_blank"
             rel="noopener noreferrer"
             className={`${
