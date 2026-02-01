@@ -10,7 +10,9 @@ export default function Footer() {
         alt="Ornamen Kiri"
         width={400}
         height={200}
-        className="absolute top-0 left-0 w-64 sm:w-96 md:w-[20rem] lg:w-[28rem] xl:w-[36rem] z-10"
+        className="absolute top-0 left-0 
+        w-40 sm:w-64 md:w-[20rem] lg:w-[28rem] xl:w-[36rem] 
+        opacity-40 sm:opacity-100 z-0"
       />
 
       {/* Ornamen Kanan Bawah */}
@@ -19,30 +21,19 @@ export default function Footer() {
         alt="Ornamen Kanan"
         width={300}
         height={150}
-        className="absolute bottom-10 right-0 w-48 sm:w-64 md:w-[20rem] lg:w-[24rem] xl:w-[28rem] z-10"
+        className="absolute bottom-0 right-0 
+        w-32 sm:w-48 md:w-[20rem] lg:w-[24rem] xl:w-[28rem] 
+        opacity-40 sm:opacity-100 z-0"
       />
 
       {/* Konten Utama */}
-      <div className="relative z-20 max-w-6xl mx-auto px-4 sm:px-8 py-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 sm:gap-6 text-sm">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-8 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-sm">
+          
           {/* Kolom 1: Sosial Media + Bank */}
-          <div className="flex flex-col items-center lg:items-start gap-4">
+          <div className="flex flex-col items-center lg:items-start gap-5">
+            {/* Sosial Media */}
             <div className="flex space-x-4">
-              {/* tiktok */}
-            {/* <Link
-              href="https://www.tiktok.com/@perfectrooms.id?_t=ZS-8yJQHyTqH7i&_r=1"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="/images/icon_tt.png"
-                alt="Instagram"
-                className="w-8 h-8"
-                width={50}
-                height={50}
-              />
-            </Link> */}
-              {/* Instagram */}
               <Link
                 href="https://www.instagram.com/ptdahliaglobalindo?igsh=ZWZxYnNrYTYzNHA0"
                 aria-label="Instagram"
@@ -50,26 +41,28 @@ export default function Footer() {
                 <Image
                   src="/images/icon_ig.png"
                   alt="Instagram"
-                  width={24}
-                  height={24}
-                  className="w-7 h-7"
+                  width={28}
+                  height={28}
                 />
               </Link>
 
-              {/* WhatsApp */}
               <Link href="https://wa.me/628153135669" aria-label="WhatsApp">
                 <Image
                   src="/images/icon_wa.png"
                   alt="WhatsApp"
-                  width={24}
-                  height={24}
-                  className="w-8 h-8"
+                  width={30}
+                  height={30}
                 />
               </Link>
             </div>
 
             {/* Logo Bank */}
-          <div className="absolute bottom-24 -left-10 bg-[#FFDD00] py-2 pr-4 pl-2 rounded-full flex gap-4 shadow-md z-10">
+            <div
+              className="
+              bg-[#FFDD00] py-2 px-4 rounded-full flex flex-wrap justify-center gap-3 shadow-md
+              lg:absolute lg:bottom-24 lg:-left-10
+            "
+            >
             <Image src="/images/pm_bni.png" alt="BNI" width={24} height={24} className="w-8 h-8 object-contain" />
             <Image src="/images/pm_bca.png" alt="BCA" width={24} height={24} className="w-8 h-8 object-contain" />
             <Image src="/images/pm_mandiri.png" alt="Mandiri" width={24} height={24} className="w-8 h-8 object-contain" />
@@ -80,7 +73,7 @@ export default function Footer() {
           </div>
 
           {/* Kolom 2: Halaman */}
-          <div>
+          <div className="text-center lg:text-left">
             <h4 className="text-base font-semibold mb-3">Halaman</h4>
             <ul className="space-y-2 text-gray-600">
               <li><Link href="/">Beranda</Link></li>
@@ -90,7 +83,7 @@ export default function Footer() {
           </div>
 
           {/* Kolom 3: Isi Pendukung */}
-          <div>
+          <div className="text-center lg:text-left">
             <h4 className="text-base font-semibold mb-3">Isi Pendukung</h4>
             <ul className="space-y-2 text-gray-600">
               <li><Link href="/#layanankami">Layanan Kami</Link></li>
@@ -101,10 +94,10 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Kolom 4: Kontak Kami */}
-          <div>
+          {/* Kolom 4: Kontak */}
+          <div className="text-center lg:text-left">
             <h4 className="text-base font-semibold mb-3">Kontak Kami</h4>
-            <p className="text-gray-600 mb-1">
+            <p className="text-gray-600 leading-relaxed mb-2">
               Jl. Kebon Kawung No.49, Pasir Kaliki, Kec. Cicendo, Kota Bandung,
               Jawa Barat 40171, Indonesia
             </p>
@@ -116,7 +109,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="bg-[#FFDD00] py-3 text-center text-xs text-gray-800 font-medium">
-        @ptdahliglobalindo. Hak Cipta Dilindungi oleh undang-undang. 
+        © ptdahliglobalindo. Hak cipta dilindungi undang-undang.
       </div>
     </footer>
   );
