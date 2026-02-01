@@ -109,7 +109,7 @@ export default function Footer() {
               Jawa Barat 40171, Indonesia
             </p>
             <p className="text-gray-600">ptdahliglobalindo@gmail.com</p>
-            <p className="text-gray-600">(+62) 815 - 3135 - 669</p>
+            <p className="text-gray-600">(+62) 815-3135-668</p>
           </div>
         </div>
       </div>
