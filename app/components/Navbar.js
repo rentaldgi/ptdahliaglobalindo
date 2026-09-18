@@ -25,13 +25,13 @@ export default function Navbar() {
         {/* Logo */}
         <div className="flex items-center text-base font-semibold text-gray-800">
           <Image
-            src="/images/logo.png"
+            src="/images/logonew.png"
             alt="Logo"
             width={48}
             height={48}
             className="mr-2 hover:scale-105 transition-transform duration-300"
           />
-           <span className="drop-shadow-sm">PT DAHLIA GLOBAL INDO</span>
+           <span className="drop-shadow-sm">DAHLIA GROUP</span>
         </div>
 
         {/* Hamburger */}
@@ -67,7 +67,7 @@ export default function Navbar() {
 
           {/* Tombol WA */}
           <a
-            href="https://wa.me/628153135669"
+            href="https://wa.me/628153135668"
             target="_blank"
             rel="noopener noreferrer"
             className={`${

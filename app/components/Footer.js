@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Phone, PhoneCall, Instagram } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -35,7 +36,7 @@ export default function Footer() {
             {/* Sosial Media */}
             <div className="flex space-x-4">
               <Link
-                href="https://www.instagram.com/ptdahliaglobalindo?igsh=ZWZxYnNrYTYzNHA0"
+                href="https://www.instagram.com/dahliagroup.id"
                 aria-label="Instagram"
               >
                 <Image
@@ -46,7 +47,7 @@ export default function Footer() {
                 />
               </Link>
 
-              <Link href="https://wa.me/628153135669" aria-label="WhatsApp">
+              <Link href="https://wa.me/628153135668" aria-label="WhatsApp">
                 <Image
                   src="/images/icon_wa.png"
                   alt="WhatsApp"
@@ -94,22 +95,47 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Kolom 4: Kontak */}
-          <div className="text-center lg:text-left">
-            <h4 className="text-base font-semibold mb-3">Kontak Kami</h4>
-            <p className="text-gray-600 leading-relaxed mb-2">
-              Jl. Kebon Kawung No.49, Pasir Kaliki, Kec. Cicendo, Kota Bandung,
-              Jawa Barat 40171, Indonesia
-            </p>
-            <p className="text-gray-600">ptdahliglobalindo@gmail.com</p>
-            <p className="text-gray-600">(+62) 815-3135-668</p>
+         {/* Kolom 4: Kontak */}
+        <div className="text-center lg:text-left">
+          <h4 className="text-base font-semibold mb-4">Kontak Kami</h4>
+
+          <div className="space-y-3 text-gray-600">
+            {/* Telepon */}
+            <a
+              href="tel:+628153135668"
+              className="flex items-center justify-center lg:justify-start gap-3 hover:text-[#002F66] transition-colors duration-200"
+            >
+              <Phone size={17} strokeWidth={1.8} className="shrink-0" />
+              <span>+62 815-3135-668</span>
+            </a>
+
+            {/* Fax */}
+            <a
+              href="tel:02245720413"
+              className="flex items-center justify-center lg:justify-start gap-3 hover:text-[#002F66] transition-colors duration-200"
+            >
+              <PhoneCall size={17} strokeWidth={1.8} className="shrink-0" />
+              <span>02245720413</span>
+            </a>
+
+            {/* Instagram */}
+            <a
+              href="https://www.instagram.com/dahliagroup.id"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center lg:justify-start gap-3 hover:text-[#002F66] transition-colors duration-200"
+            >
+              <Instagram size={17} strokeWidth={1.8} className="shrink-0" />
+              <span>@dahliagroup.id</span>
+            </a>
           </div>
         </div>
-      </div>
+        </div>
+        </div>
 
       {/* Copyright */}
       <div className="bg-[#FFDD00] py-3 text-center text-xs text-gray-800 font-medium">
-        © ptdahliglobalindo. Hak cipta dilindungi undang-undang.
+      © 2026 Dahlia Group. Seluruh hak cipta dilindungi undang-undang
       </div>
     </footer>
   );

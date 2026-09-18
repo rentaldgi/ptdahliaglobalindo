@@ -19,7 +19,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen bg-white flex flex-col">
       <Navbar />
       <AnimatePage>
         {/* Hero Section */}
@@ -31,26 +31,30 @@ export default function Home() {
             priority
             style={{ objectFit: "cover", zIndex: 1 }}
           />
-          <div className="absolute inset-0 z-10" />
-          <div className="relative z-20 flex flex-col items-start justify-center h-full px-6 md:px-16 lg:px-32 text-white">
-            <h1
-              className="text-2xl md:text-4xl lg:text-[2.75rem] font-extralight leading-snug mb-4"
-              style={{ color: "#002F66" }}
-            >
-              Yukk!
-              <br />
-              Bangun Gaya Hidup Lebih Praktis <br />
-              dengan Layanan Rental dari <br />
-              <span style={{ color: "#002F66" }}>
-                PT Dahlia Global Indo
-              </span>
-            </h1>
+          <div className="relative z-20 flex flex-col items-start justify-center h-full px-6 md:px-16 lg:px-24 xl:px-32">
+            <div className="max-w-2xl">
+              <h1
+                className="text-xl sm:text-2xl md:text-3xl lg:text-[2.5rem] font-extralight leading-snug mb-4"
+                style={{ color: "#002F66" }}
+              >
+                Upgrade Lifestyle Kamu, Biar Kami yang Urus Ribetnya!
+              </h1>
+
+              <p
+                className="text-sm md:text-base lg:text-lg leading-relaxed mb-6 max-w-xl"
+                style={{ color: "#002F66" }}
+              >
+                Solusi all-in-one dari Dahlia Group buat sewa gadget,
+                sewa motor liburan, sampai jasa pindahan tanpa pusing.
+              </p>
+          
             <p
               className="text-sm md:text-base lg:text-lg mb-6 max-w-xl"
               style={{ color: "#002F66" }}
             >
-              Temukan kenyamanan dan kemudahan dalam setiap kebutuhan Anda
+              Ayo kepoin sekarang juga!
             </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-2">
               <Link href="#layanankami">
                 <button className="relative overflow-hidden bg-gradient-to-r from-yellow-400 to-yellow-500 text-white px-8 py-4 rounded-l-full font-medium shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out before:absolute before:inset-0 before:bg-gradient-to-r before:from-blue-900 before:to-blue-400 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-500 before:ease-in-out">
@@ -80,32 +84,35 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-bold mb-8 text-black">
               LAYANAN KAMI
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
               {layananKami.map((card, idx) => (
                 <div
                   key={idx}
-                  className="bg-white shadow-xl rounded-lg flex flex-col transition-transform duration-300 hover:scale-105"
+                  className="bg-white shadow-xl rounded-lg flex flex-col transition-transform duration-300 hover:scale-105 h-full overflow-hidden"
                 >
-                  {/* <Image
-                    src={card.image}
-                    alt={card.title}
-                    className="w-full h-40 object-cover rounded-t-lg"
-                  /> */}
                   <Image
                     src={card.image}
                     alt={card.title}
                     width={400}
                     height={160}
-                    className="w-full h-40 object-cover rounded-t-lg"
+                    className="w-full h-40 object-cover"
                   />
+
                   <div className="p-4 flex flex-col justify-between flex-grow">
                     <div>
-                      <h3 className="text-lg text-black font-semibold">{card.title}</h3>
+                      <h3 className="text-lg text-black font-semibold">
+                        {card.title}
+                      </h3>
+
                       <p className="text-sm text-gray-600 text-justify">
-                        <span className={card.highlight}>{card.title}</span>{" "}
+                        <span className={card.highlight}>
+                          {card.title}
+                        </span>{" "}
                         {card.desc.replace(card.title, "")}
                       </p>
                     </div>
+
                     {card.button}
                   </div>
                 </div>
