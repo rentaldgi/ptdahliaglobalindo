@@ -44,7 +44,7 @@ export default function Home() {
                 className="text-sm md:text-base lg:text-lg leading-relaxed mb-6 max-w-xl"
                 style={{ color: "#002F66" }}
               >
-                Solusi all-in-one dari Dahlia Group buat sewa gadget,
+                Solusi all-in-one dari Dahlia Group buat sewa apartemen, sewa gadget,
                 sewa motor liburan, sampai jasa pindahan tanpa pusing.
               </p>
           
