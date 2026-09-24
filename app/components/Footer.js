@@ -6,26 +6,26 @@ export default function Footer() {
   return (
     <footer className="relative bg-white text-gray-800 overflow-hidden">
       {/* Ornamen Kiri Atas */}
-      <Image
-        src="/images/logo_footer_kiri.png"
-        alt="Ornamen Kiri"
-        width={400}
-        height={200}
-        className="absolute top-0 left-0 
-        w-40 sm:w-64 md:w-[20rem] lg:w-[28rem] xl:w-[36rem] 
-        opacity-40 sm:opacity-100 z-0"
-      />
+        <Image
+          src="/images/logo_kanan.png"
+          alt="Ornamen Kiri"
+          width={400}
+          height={200}
+          className="absolute top-0 left-0 
+          w-24 sm:w-36 md:w-48 lg:w-56 xl:w-64 
+          opacity-30 sm:opacity-40 z-0"
+        />
 
-      {/* Ornamen Kanan Bawah */}
-      <Image
-        src="/images/logo_footer_kanan.png"
-        alt="Ornamen Kanan"
-        width={300}
-        height={150}
-        className="absolute bottom-0 right-0 
-        w-32 sm:w-48 md:w-[20rem] lg:w-[24rem] xl:w-[28rem] 
-        opacity-40 sm:opacity-100 z-0"
-      />
+        {/* Ornamen Kanan Bawah */}
+        <Image
+          src="/images/logo_kiri.png"
+          alt="Ornamen Kanan"
+          width={300}
+          height={150}
+          className="absolute bottom-10 right-0 
+          w-20 sm:w-28 md:w-40 lg:w-48 xl:w-56 
+          opacity-30 sm:opacity-40 z-0"
+        />
 
       {/* Konten Utama */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-8 py-12">
